@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tipodocumento">Tipo documento</string>
+    <string-array name="tipodocumento">
+        <item>CC</item>
+        <item>CE</item>
+        <item>TI</item>
+        <item>NUIP</item>
+    </string-array>
+</resources>

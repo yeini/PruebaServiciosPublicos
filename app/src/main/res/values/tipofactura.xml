@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tipofactura">Tipo factura</string>
+    <string-array name="tipofactura">
+        <item>CENS</item>
+        <item>AGUAS OCAÑA</item>
+        <item>VEOLIA</item>
+        <item>AGUAS KAPITAL</item>
+    </string-array>
+</resources>

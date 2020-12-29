@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PagosActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="-23dp"
+        android:layout_centerHorizontal="true"
+        android:text="PagaServicios S.A."
+        android:textColor="#E2000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tituloform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_marginTop="30dp"
+        android:text="PAGO SERVICIOS"
+        android:textColor="#E2000000"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/tipofactura"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tituloform"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:entries="@array/tipofactura"
+        />
+
+
+
+    <EditText
+        android:id="@+id/numerofactura"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textEmailSubject"
+        android:hint="Digite el numero de la factura"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tipofactura"
+        />
+
+
+
+    <EditText
+        android:id="@+id/valor"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textEmailSubject"
+        android:hint="Ingrese el valor"
+        android:layout_below="@id/numerofactura"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/confvalor"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textEmailSubject"
+        android:hint="confirme el valor"
+        android:layout_below="@id/valor"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/aceptar"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="#fff"
+        android:text="Aceptar"
+        android:background="@drawable/backgroundboton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/confvalor"
+        />
+</RelativeLayout>

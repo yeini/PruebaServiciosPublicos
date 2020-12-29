@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarActivity">
+
+    <Button
+        android:id="@+id/volverlogin"
+        android:drawableLeft="@drawable/ic_volver"
+        android:layout_marginTop="10dp"
+
+        android:textColor="#0391DC"
+        android:background="@drawable/backgroundbotonregistrarse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="-23dp"
+        android:layout_centerHorizontal="true"
+        android:text="PagaServicios S.A."
+        android:textColor="#E2000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tituloformulario"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="Formulario de registro"
+        android:textColor="#E2000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:drawableRight="@drawable/ic_usuario"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textEmailSubject"
+        android:hint="Nombre(s) y Apellido(s)"
+        android:layout_below="@id/tituloformulario"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/tipodocumento"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/nombre"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:entries="@array/tipodocumento"
+        />
+
+    <EditText
+        android:id="@+id/documento"
+        android:drawableRight="@drawable/ic_identificacion"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textEmailSubject"
+        android:hint="Número de documento"
+        android:layout_below="@id/tipodocumento"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/correo"
+        android:drawableRight="@drawable/ic_correo"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textEmailSubject"
+        android:hint="Ingrese su correo electronico"
+        android:layout_below="@id/documento"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/clave"
+        android:drawableRight="@drawable/ic_clave"
+        android:layout_below="@+id/correo"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textPassword"
+        android:hint="Ingrese su clave"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/confirmacionclave"
+        android:drawableRight="@drawable/ic_clave"
+        android:layout_below="@+id/clave"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textPassword"
+        android:hint="Confirme su contraseña"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/registrarse"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/confirmacionclave"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:text="Registrarse"
+        android:background="@drawable/backgroundboton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

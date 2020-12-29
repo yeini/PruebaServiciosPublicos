@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="-23dp"
+        android:layout_centerHorizontal="true"
+        android:text="Tus Recargas"
+        android:textColor="#E2000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="INGRESAR"
+        android:textColor="#E2000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_centerHorizontal="true"
+        android:text="Para iniciar sesión por favor indique su correo y contraseña"
+        android:textColor="#E2000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/correo"
+        android:drawableRight="@drawable/ic_correo"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textEmailSubject"
+        android:hint="Ingrese su correo electrónico"
+        />
+
+    <EditText
+        android:id="@+id/clave"
+        android:drawableRight="@drawable/ic_clave"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/correo"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textPassword"
+        android:hint="Ingrese su contraseña"
+        />
+
+    <Button
+        android:id="@+id/ingresar"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/clave"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:text="Iniciar Sesion"
+        android:background="@drawable/backgroundboton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/registrarse"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ingresar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0391DC"
+        android:text="¿No tienes cuenta aun? Registrate aqui."
+        android:background="@drawable/backgroundbotonregistrarse"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="10dp"
+        android:textSize="10sp"
+        android:layout_marginBottom="20dp"
+        />
+</RelativeLayout>
